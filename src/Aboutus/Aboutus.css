@@ -1,0 +1,138 @@
+#showcase {
+  background: url("../assets/bg1.jpg") no-repeat center center/cover;
+  height: 500px;
+}
+
+.text-primary1 {
+  color: #da884e;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* Pic2 */
+#showcase2 {
+  background: url("../assets/aboutusbg1.jpg") no-repeat center center/cover;
+  height: 500px;
+}
+
+.text-primary2 {
+  color: #da884e;
+}
+
+.lead2 {
+  font-size: 20px;
+}
+
+#showcase2 .showcase-content2 {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase2 .showcase-content2 h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase2 .showcase-content2 p1 {
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.7em;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* pic3 */
+#showcase3 {
+  background: url("../assets/aboutusbg2.jpg") no-repeat center center/cover;
+  height: 500px;
+}
+
+.text-primary3 {
+  color: #da884e;
+}
+
+.lead3 {
+  font-size: 20px;
+}
+
+#showcase3 .showcase-content3 {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase3 .showcase-content3 h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase3 .showcase-content3 p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}

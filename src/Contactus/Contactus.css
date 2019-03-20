@@ -1,0 +1,63 @@
+/*Contact Form*/
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.text-primary {
+  color: #da884e;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #dddddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+/* Home Info */
+#contact-info {
+  height: 300px;
+}
+
+#contact-info .info-content1 {
+  float: right;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0px 30px;
+  overflow: hidden;
+}
+
+#contact-info .info-content2 {
+  float: right;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 100px 30px;
+  overflow: hidden;
+}
+
+#contact-info .info-content1 p1 {
+  padding-bottom: 10px;
+}
+
+#contact-info .info-content2 p1 {
+  padding-bottom: 10px;
+}
+
+.text-primary2 {
+  color: #da884e;
+}
+
+.text-primary3 {
+  color: #da884e;
+}
