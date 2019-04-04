@@ -1,6 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import profile from "./profile.svg";
+import Sidebar from "react-sidebar";
+
 class NavigationBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sidebarOpen: true
+    };
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+  }
+
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+  }
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -45,30 +59,15 @@ class NavigationBar extends React.Component {
               </Link>
             </li>
 
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+            <li className="nav-item">
+              <Link className="nav-link" to="/productList">
                 Products
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider" />
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/my-cart">
+                My Cart
+              </Link>
             </li>
 
             <li className="nav-item">
@@ -77,7 +76,7 @@ class NavigationBar extends React.Component {
               </Link>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 className="nav-link disabled"
                 href="#"
@@ -86,9 +85,9 @@ class NavigationBar extends React.Component {
               >
                 Disabled
               </a>
-            </li>
+            </li> */}
           </ul>
-          <form className="form-inline my-2 my-lg-0">
+          {/* <form className="form-inline my-2 my-lg-0">
             <input
               className="form-control mr-sm-2"
               type="search"
@@ -101,7 +100,19 @@ class NavigationBar extends React.Component {
             >
               Search
             </button>
-          </form>
+          </form> */}
+
+          <li className="nav-item">
+            <Link className="nav-link" to="/Login">
+              <img
+                alt=""
+                src={profile}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />
+            </Link>
+          </li>
         </div>
       </nav>
     );

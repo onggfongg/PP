@@ -1,14 +1,34 @@
 import React from "react";
 import { Form, Icon, Button, Row, Col } from "antd";
 import TextField from "../components/TextField";
+import firebase from "./firebase.js";
 
 class SignUp extends React.Component {
-  state = {
-    userName: "",
-    password: "",
-    confirmPassword: "",
-    error: ""
-  };
+  constructor() {
+    super();
+    this.state = {
+      userName: "",
+      password: "",
+      confirmPassword: "",
+      error: ""
+    };
+    //this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    const userRegister = firebase.database().ref("users");
+    const user = {
+      username: this.state.userName,
+      password: this.state.password
+    };
+    userRegister.push(user);
+    this.setState({
+      userName: "",
+      password: "",
+      confirmPassword: ""
+    });
+  }
 
   render() {
     const { userName, password, confirmPassword, error } = this.state;
@@ -62,11 +82,23 @@ class SignUp extends React.Component {
                       this.setState({ error: "Cannot Register" });
                     } else {
                       this.setState({ error: null });
+                      //e.preventDefault();
+                      const userRegister = firebase.database().ref("users");
+                      const user = {
+                        username: this.state.userName,
+                        password: this.state.password
+                      };
+                      userRegister.push(user);
+                      this.setState({
+                        userName: "",
+                        password: "",
+                        confirmPassword: ""
+                      });
                       // post().then(res=>)
                     }
                   }}
                 >
-                  Confirm SignUp
+                  <a href="finishedSignup">Confirm SignUp</a>
                 </Button>
               </Form.Item>
             </Form>
