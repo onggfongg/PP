@@ -10,6 +10,7 @@ import React from "react";
 import NavigationBar from "./components/NavigationBar";
 import Details from "./Details/Details";
 import MyCart from "./my_cart";
+// import FlavorForm from "./Details/FlavorForm";
 
 class Router extends React.Component {
   render() {
@@ -27,6 +28,8 @@ class Router extends React.Component {
             <Route exact path="/finishedSignup" component={finishedSignup} />
             <Route exact path="/productList" component={productList} />
             <Route exact path="/my-cart" component={MyCart} />
+            {/* <Route exact path="/FlavorForm" component={FlavorForm} /> */}
+            {/* <Route exact path="/ListPopover" component={ListPopover} /> */}
             {/* <Route exact path="/details" component={Details} /> */}
             {/* <Route exact path="/products" component={Products} /> */}
           </Switch>

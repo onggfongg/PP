@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Icon, Button, Row, Col } from "antd";
 import TextField from "../components/TextField";
+import { Link } from "react-router-dom";
 
 class LoginForm extends React.Component {
   state = {
@@ -50,6 +51,15 @@ class LoginForm extends React.Component {
                 }}
               >
                 Login
+              </Button>
+
+              <Button
+                type="primary"
+                htmlType="submit"
+                className="login-form-button1"
+                href="/sign-up"
+              >
+                Sign up
               </Button>
             </Form.Item>
           </Form>
